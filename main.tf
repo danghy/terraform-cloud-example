@@ -16,6 +16,6 @@ resource "aws_instance" "ubuntu" {
   instance_type = "t3.small"
 
   tags = {
-    Name = "enouvo-2
+    Name = "enouvo-2"
   }
 }
