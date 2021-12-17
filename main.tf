@@ -10,3 +10,12 @@ resource "aws_instance" "ubuntu" {
     Name = "enouvo-1"
   }
 }
+
+resource "aws_instance" "ubuntu" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t3.small"
+
+  tags = {
+    Name = "enouvo-2
+  }
+}
